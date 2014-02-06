@@ -6,8 +6,8 @@ int main(int argc, char * argv[])
     {
       Pic pic1(argv[1]);
       //pic1.Draw();
-      //pic1.Surf();
-      pic1.Draw();
+      pic1.Surf();
+      pic1.DrawSurf();
     }
       
   

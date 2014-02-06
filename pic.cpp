@@ -38,8 +38,8 @@ void Pic::DrawSurf()
 void Pic::Surf()
 {
   cv::Mat surf_img;
-  cv::cvtColor(img, surf_img, 7); 
-  cv::SURF surfer(0,500,5,1);
-  surfer(surf_img, std::vector<int>(),keypoints, descriptors);
+  cv::cvtColor(img, surf_img, cv::COLOR_RGB2GRAY); 
+  cv::SURF surfer(400);
+  surfer(surf_img, cv::noArray(), keypoints);//, descriptors);
   
 }

@@ -10,7 +10,7 @@ class Pic
  private:
   std::string filename;
   std::vector<cv::KeyPoint> keypoints;
-  std::vector<long> descriptors;
+  std::vector<float> descriptors;
   std::vector<cv::Point2f> positions;
   std::vector<float> scale;
   cv::Mat img;
